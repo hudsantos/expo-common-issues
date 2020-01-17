@@ -39,6 +39,7 @@ Esse repositório contém uma série de erros (e suas soluções) que você pode
   - Rode o comando `yarn start` ou `expo start` através do terminal do seu computador ao invés de usar o terminal embutido do VSCode;
 - VMWare ou VirtualBox ou Docker podem influenciar na hora do Expo criar um endereço IP, se estiver com algum destes serviços rodando, altere a conexão de LAN para Tunnel;
 - Altere a conexão de LAN pra Tunnel;
+- Também pode tentar utilizar a variavel de ambiente `REACT_NATIVE_PACKAGER_HOSTNAME="ip_do_seu_computador"` caso o `expo-cli` esteja sendo executado dentro de um container Docker, consequentemente escutando num endereço IP de uma rede diferente do seu celular. O comando é: `export REACT_NATIVE_PACKAGER_HOSTNAME="ip_do_seu_computador"` e depois sim inicia o `expo-cli`. Mais detalhes [neste artigo](https://medium.com/@hmajid2301/running-expo-react-native-in-docker-ff9c4f2a4388).
 
 ### **The internet connection appears to be offline.**
 
